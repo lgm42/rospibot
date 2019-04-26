@@ -1,0 +1,13 @@
+[Unit]
+Description=Start all ROS nodes
+After=roscore.service
+
+ 
+[Service]
+Type=simple
+ 
+ExecStart=/bin/bash /home/ubuntu/start-rospibot.sh
+
+ 
+[Install]
+WantedBy=runlevel1.target
